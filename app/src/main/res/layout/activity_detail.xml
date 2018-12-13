@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:weightSum="10"
+    tools:context="com.example.muklahhn.popular_movies.DetailActivity">
+
+    <TextView
+        android:id="@+id/tv_movie_name"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="2.5"
+        android:paddingLeft="16dp"
+        android:gravity="center_vertical"
+        android:textSize="33sp"
+        android:textColor="@color/movieName"
+        android:background="@color/bg_movieName"/>
+
+    <RelativeLayout
+        android:id="@+id/rl"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="5"
+        android:padding="6dp">
+
+    <ImageView
+        android:id="@+id/iv_poster"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/three"/>
+
+    <TextView
+        android:id="@+id/tv_movie_date"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/iv_poster"
+        android:layout_toRightOf="@+id/iv_poster"
+        android:layout_alignParentTop="true"
+        android:paddingLeft="2dp"
+        android:textSize="22sp" />
+
+        <TextView
+            android:id="@+id/tv_vote_average"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv_movie_date"
+            android:layout_toRightOf="@+id/iv_poster"
+            android:paddingLeft="2dp"
+            android:textSize="20sp" />
+
+    </RelativeLayout>
+
+        <TextView
+            android:id="@+id/tv_movie_overview"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/rl"
+            android:padding="16dp"
+            android:textSize="18sp" />
+
+</LinearLayout>
